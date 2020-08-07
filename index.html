@@ -45,6 +45,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   text-align: center;
   outline: none;
   font-weight:bold;
+  transition:0.3s;
 }
 
 .active, .collapsible:hover {
@@ -79,6 +80,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-code w3-xxlarge"></i>
     <p>PROJECTS</p>
   </a>
+  <a href="#articles" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-newspaper-o w3-xxlarge"></i>
+    <p>ARTICLES</p>
+  </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
@@ -88,10 +93,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
+    <a href="#articles" class="w3-bar-item w3-button" style="width:20% !important">ARTICLES</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
   </div>
 </div>
 
@@ -149,6 +155,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </button>
   <!-- End About Section -->
   </div>
+
+  <hr/>
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
@@ -159,6 +167,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="content" id="extra_repos"></div></center>
   <!-- End Portfolio Section -->
   </div>
+
+  <hr/>
+  
+  <!-- Article Section -->
+  <div class="w3-padding-64 w3-content" id="articles">
+    <h2 class="w3-text-light-grey">My Articles</h2>
+    <center><button type="button" class="collapsible" onclick='window.open("https://medium.com/@prakshal_15988")'>See all Articles on Medium...</button></center><br/>
+    <hr style="width:200px" class="w3-opacity">
+      <div id="retainable-rss-embed" 
+        data-rss="https://medium.com/feed/@prakshal_15988"
+        data-maxcols="3" 
+        data-layout="grid" 
+        data-poststyle="inline" 
+        data-readmore="Read the rest" 
+        data-buttonclass="btn btn-primary" 
+        data-offset="-100" id="codes_content"></div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <hr/>
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -218,6 +246,6 @@ for (i = 0; i < coll.length; i++) {
 
 
 </script>
-
+<script src="https://www.retainable.app/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 </body>
 </html>
