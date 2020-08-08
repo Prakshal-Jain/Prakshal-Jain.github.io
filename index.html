@@ -267,7 +267,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   document.getElementById("repos").innerHTML = '<div class="ripple"></div><p>Please wait... Fetching projects from GitHub</p>'
   var d = 0
   $.ajax({
-  url: "https://api.github.com/users/Prakshal-Jain/rpos",
+  url: "https://api.github.com/users/Prakshal-Jain/repos",
   jsonp: true,
   method: "GET",
   dataType: "json",
