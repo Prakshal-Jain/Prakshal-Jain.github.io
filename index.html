@@ -86,158 +86,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   transition:0.3s;
 }
 
-
-
-*, .hl, .bdy{
-	padding:0px;
-	margin:0px;
-	box-sizing:border-box;
-	perspective:800px;
-}
-.bdy{
-	background-color:transparent;
-	width:100%;
-	min-height:100vh;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
-.timeline{
-	position:relative;
-	width:800px;
-	padding:20px;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-}
-.timeline:before{
-	content: '';
-	position:absolute;
-	left:50%;
-	transform:translateX(-50%);
-	width:2px;
-	height:100%;
-	background-color:#ccc;
-}
-.timeline ul{
-	list-style-type:none;
-}
-.timeline ul li{
-	width:50%;
-	padding:5px 30px 40px 30px;
-	cursor:pointer;
-}
-.timeline ul li:nth-child(even):before{
-	content:'';
-	position:absolute;
-	width:12px;
-	height:12px;
-	background-color:#0099FF;
-	border-radius:50%;
-	left:-6px;
-	top:12px;
-	transition:.5s;
-}
-.timeline ul li:nth-child(odd):before{
-	content:'';
-	position:absolute;
-	width:12px;
-	height:12px;
-	background-color:#0099FF;
-	border-radius:50%;
-	right:-6px;
-	top:12px;
-	transition:.5s;
-}
-.timeline ul li:hover:before{
-	box-shadow:0px 0px 5px 2px #0099FF;
-}
-.timeline ul li:nth-child(even){
-	float:right;
-	text-align:left;
-	clear:both;
-}
-.timeline ul li:nth-child(odd){
-	float:left;
-	text-align:right;
-	clear:both;
-}
-.timeline ul li:nth-child(odd) .time{
-	position:absolute;
-	right:-38%;
-	top: 3px;
-	background-color:#0099FF;
-	color:#fff;
-	text-align:left;
-	padding-left:10px;
-	width:120px;
-	height:28px;
-	line-height:28px;
-	border-radius:20px; 
-	box-shadow:0px 0px 0px 3px rgba(0,153,255,.3);
-}
-.timeline ul li:nth-child(even) .time{
-	position:absolute;
-	left:-38%;
-	top: 3px;
-	background-color:#0099FF;
-	color:#fff;
-	text-align:right;
-	padding-right:10px;
-	width:120px;
-	height:28px;
-	line-height:28px;
-	border-radius:20px; 
-	box-shadow:0px 0px 0px 3px rgba(0,153,255,.3);
-}
-.timeline ul li .cont h3{
-	color:#0099FF;
-	font-size:17px;
-}
-.timeline ul li .cont p{
-	color:#fff;
-}
-
-@media (max-width:750px){
-	.timeline{
-		width:100%;
-		margin:5px 0px;
-	}
-	.timeline:before{
-		left:20px;
-	}
-	.timeline ul li{
-		width:100%;
-		padding:3px 0px 40px 20px;
-		cursor:pointer;
-	}
-	.timeline ul li:nth-child(even):before{
-		left:-6px;
-	}
-	.timeline ul li:nth-child(odd):before{
-		left:-6px;
-	}
-	.timeline ul li:nth-child(even){
-		float:left;
-		text-align:left;
-	}
-	.timeline ul li:nth-child(odd){
-		float:left;
-		text-align:left;
-	}
-	.timeline ul li:nth-child(odd) .time{
-		position:static;
-		text-align:left;
-		padding-left:5px;
-		box-shadow:0px 0px 0px 0px ;
-	}
-	.timeline ul li:nth-child(even) .time{
-		position:static;
-		text-align:left;
-		padding-left:5px;
-		box-shadow:0px 0px 0px 0px ;
-	}
-}
 </style>
 <body class="w3-black">
 
@@ -294,63 +142,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>I am a Computer Science student at University at Buffalo Honors College. I love developing Web-Based applications, software, learning and implementing new skills into interdisciplinary projects that escalate efficiency by reducing effort.</p>
     <p>I am greatly interested in full-stack web development.</p>
     <p>My mission is to Simplify lives through proper implementation of technology and revolutionise industries.</p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Experiences</h3>
-
-
-<div class="hl">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div class="bdy">
-
-	
-
-	<div class="timeline">
-		<ul>
-			<li>
-				<div class='time'>
-					<span>March 2020</span>
-				</div>
-				<div class="cont">
-				<h3>Undergraduate Research Assistant, UB Honors College</h3>
-				<p>The National Science Foundation and Amazon, the grant’s joint funders, have partnered on a program called Fairness in Artificial Intelligence (FAI) that aims to address bias and build trustworthy computational systems that can contribute to solving the biggest challenges facing modern societies.</p>
-				</div>
-			</li>
-			<li>
-				<div class='time'>
-					<span>July 2020</span>
-				</div>
-				<div class="cont">
-				<h3>Research Assistant, Stony Brook University</h3>
-				<p>
-					Research assistant at Stony Brook University Department of Psychology.
-Tasks include:<br/>
-- Developing Scripts for the department especially in Python using Psychopy.<br/>
-- Image Processing
-				</p>
-				</div>
-			</li>
-			<li>
-				<div class='time'>
-					<span>July 2020</span>
-				</div>
-				<div class="cont">
-				<h3>Web Designer and Developer</h3>
-				<p>
-					Tasks include:
-Building subdomains of the website for University at Buffalo School of Social Work.<br/>
-Technologies and Tools:<br/>
-JavaScript | WordPress | HTML | CSS
-				</p>
-				</div>
-			</li>
-		</ul>
-	</div>
-	
-
-</div>
-	
-
-</div>
-</div>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-single w3-section">
