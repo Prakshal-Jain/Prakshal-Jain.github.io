@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <title>Prakshal Jain Portfolio</title>
@@ -85,6 +86,36 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   color: #fff;
   transition:0.3s;
 }
+
+.ripple {
+  text-decoration: none;
+  color: #fff;
+  width: 12px;
+  height: 12px;
+  background-color: #00E7FF;
+  margin: 0 auto;
+  border-radius: 100px;
+  -webkit-animation: ripple 0.7s linear infinite;
+  animation: ripple 0.7s linear infinite;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 231, 255, 0.3), 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3), 0 0 0 90px rgba(0, 231, 255, 0);
+  }
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 231, 255, 0.3), 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3), 0 0 0 90px rgba(0, 231, 255, 0);
+  }
+}
+
 
 </style>
 <body class="w3-black">
@@ -187,7 +218,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-padding-64 w3-content" id="photos">
     <h2 class="w3-text-light-grey">My Projects</h2>
     <hr style="width:200px" class="w3-opacity">
-    <center><ul id="repos"></ul>
+    <center><div id="repos"></div>
     <button type="button" class="collapsible">See all Projects...</button>
     <div class="content" id="extra_repos"></div></center>
   <!-- End Portfolio Section -->
@@ -199,7 +230,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-padding-64 w3-content" id="articles">
     <h2 class="w3-text-light-grey">My Articles</h2>
     <hr style="width:200px" class="w3-opacity">
-    <center><button type="button" class="collapsible" onclick='window.open("https://medium.com/feed/the-philosophy-in-the-art-of-living")'>See all Articles on Medium...</button></center><br/>
+    <center><button type="button" class="collapsible" onclick='window.open("https://medium.com/the-philosophy-in-the-art-of-living")'>See all Articles on Medium...</button></center><br/>
       <div class="arts">
       <div id="retainable-rss-embed" 
         data-rss="https://medium.com/feed/@prakshal_15988"
@@ -233,6 +264,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <script>
+  document.getElementById("repos").innerHTML = '<div class="ripple"></div><p style="margin-top:100px;">Please wait... Fetching projects from GitHub</p>'
   var d = 0
   $.ajax({
   url: "https://api.github.com/users/Prakshal-Jain/repos",
@@ -240,6 +272,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   method: "GET",
   dataType: "json",
   success: function(res) {
+    document.getElementById("repos").innerHTML = ''
     for (let e of res){
       if(d <= 3){
         document.getElementById("repos").innerHTML += "<div id='codes_content'  onclick='window.open(`"+e.clone_url+"`)'><h4 style='font-weight:bold;'>"+e.name+"</h4>"+e.description+"<br/>"+(e.language != null ? " Language: "+e.language : "")+"</div>"
