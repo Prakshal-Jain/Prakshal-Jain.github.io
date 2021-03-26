@@ -9,13 +9,6 @@
     margin: 50px auto;
   }
   
-  p {
-    font-weight: 300;
-    line-height: 1.5;
-    font-size: 14px;
-    opacity: 0.8;
-  }
-  
   .timeline {
     position: relative;
     padding-left: 4rem;
