@@ -13,6 +13,9 @@
   $(function(){
     $("#includedContent").load("./experiences.html");
   });
+  $(function(){
+    $("#awards").load("./awards.html");
+  });
 </script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -181,7 +184,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <center>
         <button type="button" class="collapsible" onclick='window.open("https://www.linkedin.com/in/prakshal-jain-profile/")'>View my LinkedIn Profile</button>
     </center>
+    <hr/>
+    <h3 class="w3-padding-16 w3-text-light-grey">Honors & Awards</h3>
+    <div id="awards"></div>
+    <hr/>
     <div id="includedContent"></div>
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <a href="./PRAKSHAL JAIN.pdf" download style="text-decoration:none;"><i class="fa fa-download"></i> Download Resume</a>
+    </button>
     <br>
     <hr/>
     <h3 class="w3-padding-16 w3-text-light-grey">Recommendations / Testimonials </h3>
@@ -214,10 +224,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         GitHub Projects
       </div>
     </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href="./PRAKSHAL JAIN.pdf" download style="text-decoration:none;"><i class="fa fa-download"></i> Download Resume</a>
-    </button>
   <!-- End About Section -->
   </div>
 
@@ -233,10 +239,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- End Portfolio Section -->
   </div>
 
-  <hr/>
+  <!-- <hr/> -->
   
   <!-- Article Section -->
-  <div class="w3-padding-64 w3-content" id="articles">
+  <!-- <div class="w3-padding-64 w3-content" id="articles">
     <h2 class="w3-text-light-grey">My Articles</h2>
     <hr style="width:200px" class="w3-opacity">
     <center><button type="button" class="collapsible" onclick='window.open("https://medium.com/the-philosophy-in-the-art-of-living")'>See all Articles on Medium...</button></center><br/>
@@ -248,7 +254,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         data-poststyle="modal" 
         data-readmore="Read the rest" 
         data-buttonclass="btn btn-primary" 
-        data-offset="-200">&#160;</div></div>
+        data-offset="-200">&#160;</div></div> -->
   <!-- End Portfolio Section -->
   </div>
 
