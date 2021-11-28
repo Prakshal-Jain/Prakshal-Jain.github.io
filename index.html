@@ -10,239 +10,298 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="recomm.css">
 <script>
-  $(function(){
+  $(function () {
     $("#includedContent").load("./experiences.html");
   });
-  $(function(){
+  $(function () {
     $("#awards").load("./awards.html");
   });
 </script>
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
 
-#codes_content{
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {
+    width: 120px;
+    background: #222;
+  }
+
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {
+    margin-left: 120px
+  }
+
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {
+    #main {
+      margin-left: 0
+    }
+  }
+
+  #codes_content {
     padding: 9px;
     width: 80%;
     border: 1px solid #ccc;
     border-radius: 10px;
-    text-align:center;
+    text-align: center;
     word-wrap: break-word;
     margin: 20px 0;
     cursor: pointer;
     transition: 0.3s;
   }
 
-  #codes_content:hover{
+  #codes_content:hover {
     color: #000;
     background-color: #fff;
   }
 
   .collapsible {
-  background-color: #fff;
-  color: #000;
-  padding: 7px;
-  cursor: pointer;
-  border: 2px solid #fff;
-  border-radius: 7px;
-  text-align: center;
-  outline: none;
-  font-weight:bold;
-  transition:0.3s;
-}
-
-.active, .collapsible:hover {
-  color: #fff;
-  background-color: #000;
-  outline: none;
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: transparent;
-}
-
-.arts a{
-  text-decoration:none;
-}
-.arts a h2{
-  font-size:large;
-}
-
-.slider-post {
-  border: 1px solid #ccc;
-  border-radius:7px;
-  margin:5px;
-}
-
-.slider-post:hover {
-  background-color: #fff;
-  color: #000;
-  transition:0.3s;
-}
-
-.slider-post:hover .post-date {
-  background-color: rgb(0,0,0,0.8);
-  color: #fff;
-  transition:0.3s;
-}
-
-.ripple {
-  margin:100px;
-  text-decoration: none;
-  color: #fff;
-  width: 12px;
-  height: 12px;
-  background-color: #00E7FF;
-  border-radius: 100px;
-  -webkit-animation: ripple 0.7s linear infinite;
-  animation: ripple 0.7s linear infinite;
-}
-
-@-webkit-keyframes ripple {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 231, 255, 0.3), 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3);
+    background-color: #fff;
+    color: #000;
+    padding: 7px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+    transition: 0.3s;
   }
-  100% {
-    box-shadow: 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3), 0 0 0 90px rgba(0, 231, 255, 0);
-  }
-}
-@keyframes ripple {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 231, 255, 0.3), 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3);
-  }
-  100% {
-    box-shadow: 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3), 0 0 0 90px rgba(0, 231, 255, 0);
-  }
-}
 
+  .active,
+  .collapsible:hover {
+    color: #fff;
+    background-color: #000;
+    outline: none;
+  }
 
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  .arts a {
+    text-decoration: none;
+  }
+
+  .arts a h2 {
+    font-size: large;
+  }
+
+  .slider-post {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin: 5px;
+  }
+
+  .slider-post:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+  }
+
+  .slider-post:hover .post-date {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  .ripple {
+    margin: 100px;
+    text-decoration: none;
+    color: #fff;
+    width: 12px;
+    height: 12px;
+    background-color: #00E7FF;
+    border-radius: 100px;
+    -webkit-animation: ripple 0.7s linear infinite;
+    animation: ripple 0.7s linear infinite;
+  }
+
+  @-webkit-keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 231, 255, 0.3), 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3);
+    }
+
+    100% {
+      box-shadow: 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3), 0 0 0 90px rgba(0, 231, 255, 0);
+    }
+  }
+
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 231, 255, 0.3), 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3);
+    }
+
+    100% {
+      box-shadow: 0 0 0 10px rgba(0, 231, 255, 0.3), 0 0 0 30px rgba(0, 231, 255, 0.3), 0 0 0 60px rgba(0, 231, 255, 0.3), 0 0 0 90px rgba(0, 231, 255, 0);
+    }
+  }
 </style>
+
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="myPic.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-code w3-xxlarge"></i>
-    <p>PROJECTS</p>
-  </a>
-  <!-- <a href="#articles" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="myPic.jpg" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-code w3-xxlarge"></i>
+      <p>PROJECTS</p>
+    </a>
+    <!-- <a href="#articles" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-newspaper-o w3-xxlarge"></i>
     <p>ARTICLES</p>
   </a> -->
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
-    <a href="#articles" class="w3-bar-item w3-button" style="width:20% !important">ARTICLES</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo" style="text-shadow: 0 0 20px #0099FF;"><span class="w3-hide-small">I'm</span> Prakshal Jain</h1>
-    <p>Honors Student, Computer Science</p>
-    <img src="rule.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>I am a Computer Science student at University at Buffalo Honors College. I love developing Web-Based applications, software, learning and implementing new skills into interdisciplinary projects that escalate efficiency by reducing effort.</p>
-    <p>I am greatly interested in full-stack web development.</p>
-    <p>My mission is to Simplify lives through proper implementation of technology and revolutionise industries.</p>
-    <center>
-        <button type="button" class="collapsible" onclick='window.open("https://www.linkedin.com/in/prakshal-jain-profile/")'>View my LinkedIn Profile</button>
-    </center>
-    <hr/>
-    <h3 class="w3-padding-16 w3-text-light-grey">Honors & Awards</h3>
-    <div id="awards"></div>
-    <hr/>
-    <div id="includedContent"></div>
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href="./Prakshal Jain's Resume.pdf" download style="text-decoration:none;"><i class="fa fa-download"></i> Download Resume</a>
-    </button>
-    <br>
-    <hr/>
-    <h3 class="w3-padding-16 w3-text-light-grey">Recommendations / Testimonials </h3>
-    <section id="testim" class="testim">
-      <!--         <div class="testim-cover"> -->
-                  <div class="wrap">
-      
-                      <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-                      <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-                      <ul id="testim-dots" class="dots">
-                          <li class="dot active"></li>
-                      </ul>
-                      <div id="testim-content" class="cont">
-                          
-                          <div class="active">
-                              <div class="img"><img src="kenny.png" alt=""></div>
-                              <h2>Kenneth Joseph</h2>
-                              <p>Assistant Professor of Computer Science at the University at Buffalo (UB)<br><a href = "letter.pdf" target="_blank" download>Show Letter of Recommendation</a></p>
-                          </div>
-                      </div>
-                  </div>
-      <!--         </div> -->
-      </section>
-      <hr/>
-    <script src="recomm.js"></script>      
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-single w3-section" style="cursor:pointer;" onclick='window.open("https://github.com/Prakshal-Jain")'>
-        <span class="w3-xlarge" id="proj"></span><br>
-        GitHub Projects
-      </div>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
+      <a href="#articles" class="w3-bar-item w3-button" style="width:20% !important">ARTICLES</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
     </div>
-  <!-- End About Section -->
   </div>
 
-  <hr/>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Projects</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <center><div id="repos"></div>
-    <button type="button" class="collapsible">See all Projects...</button>
-    <div class="content" id="extra_repos"></div></center>
-  <!-- End Portfolio Section -->
-  </div>
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo" style="text-shadow: 0 0 20px #0099FF;"><span class="w3-hide-small">I'm</span> Prakshal Jain
+      </h1>
+      <p>Honors Student, Computer Science</p>
+      <img src="rule.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
 
-  <!-- <hr/> -->
-  
-  <!-- Article Section -->
-  <!-- <div class="w3-padding-64 w3-content" id="articles">
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-white">About me</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p class="w3-text-light-grey">I am a Computer Science student at the University at Buffalo Honors College. My
+        passion is developing applications and algorithms that simplify tasks for users in various aspects of life. I
+        love learning and implementing new skills into interdisciplinary projects that escalate efficiency by reducing
+        effort.</p>
+      <p class="w3-text-light-grey">My mission is to simplify lives through proper implementation of technology and
+        revolutionize industries.</p>
+      <center>
+        <button type="button" class="collapsible"
+          onclick='window.open("https://www.linkedin.com/in/prakshal-jain-profile/")'>View my LinkedIn Profile</button>
+      </center>
+
+
+      <h2 class="w3-text-white" style="margin-top: 4em;">Featured</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <div class="information-card-container">
+        <div class="information-card">
+          <h3 class="theme-gradient-text w3-center">Zeal</h3>
+          <p>Oh! Forgot to tell you. This Portfolio is old. I created it in 2019 (during my
+            high-school), and since then, updated it.</p>
+          <p><b>IF YOU WANT TO SEE MY LATEST WORK, visit <a href="https://www.zeal.courses/" target="_blank"
+                class="w3-yellow">&nbsp;https://www.zeal.courses&nbsp;</a></b></p>
+          <p>"Zeal" is a tool to build high-performing teams for events like hackathons and
+            workshops, personal or academic projects, and startups.</p>
+          <p>I singlehandedly Zeal using ReactJS (frontend) and Django (backend). It is
+            currently used by <label class="w3-yellow">&nbsp;100+ students&nbsp;</label> at University at Buffalo and
+            <label class="w3-yellow">&nbsp;Blackstone Launchpad&nbsp;</label> for their group events.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="w3-text-white" style="margin-top: 4em;">Honors and Awards</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <div id="awards"></div>
+      <hr />
+      <div id="includedContent"></div>
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <a href="./Prakshal Jain's Resume.pdf" target="_blank" style="text-decoration:none;"><i
+            class="fa fa-download"></i>
+          Download Resume</a>
+      </button>
+      <br>
+      <hr />
+      <h3 class="w3-padding-16 w3-text-light-grey">Recommendations / Testimonials </h3>
+      <section id="testim" class="testim">
+        <!--         <div class="testim-cover"> -->
+        <div class="wrap">
+
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+          <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+          </ul>
+          <div id="testim-content" class="cont">
+
+            <div class="active">
+              <div class="img"><img src="kenny.png" alt=""></div>
+              <h2>Kenneth Joseph</h2>
+              <p>Assistant Professor of Computer Science at the University at Buffalo (UB)<br><a href="letter.pdf"
+                  target="_blank">Show Letter of Recommendation</a></p>
+            </div>
+          </div>
+        </div>
+        <!--         </div> -->
+      </section>
+      <hr />
+      <script src="recomm.js"></script>
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-single w3-section" style="cursor:pointer;"
+          onclick='window.open("https://github.com/Prakshal-Jain")'>
+          <span class="w3-xlarge" id="proj"></span><br>
+          GitHub Projects
+        </div>
+      </div>
+      <!-- End About Section -->
+    </div>
+
+    <hr />
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-light-grey">My Projects</h2>
+      <div class="w3-small">Fetched from GitHub</div>
+      <hr style="width:200px" class="w3-opacity">
+      <center>
+        <div id="repos"></div>
+        <button type="button" class="collapsible">See all Projects...</button>
+        <div class="content" id="extra_repos"></div>
+      </center>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- <hr/> -->
+
+    <!-- Article Section -->
+    <!-- <div class="w3-padding-64 w3-content" id="articles">
     <h2 class="w3-text-light-grey">My Articles</h2>
     <hr style="width:200px" class="w3-opacity">
     <center><button type="button" class="collapsible" onclick='window.open("https://medium.com/the-philosophy-in-the-art-of-living")'>See all Articles on Medium...</button></center><br/>
@@ -255,10 +314,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         data-readmore="Read the rest" 
         data-buttonclass="btn btn-primary" 
         data-offset="-200">&#160;</div></div> -->
-  <!-- End Portfolio Section -->
+    <!-- End Portfolio Section -->
   </div>
 
-  <hr/>
+  <hr />
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -268,60 +327,74 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Buffalo, NY, US</p>
       <!-- <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 ()</p> -->
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a href = "mailto:prakshal@buffalo.edu" style="text-decoration: none;">prakshal@buffalo.edu</a></p>
-      <p><i class="fa fa-linkedin-square fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a href = "//www.linkedin.com/in/prakshal-jain-profile" style="text-decoration: none;" target="_blank">www.linkedin.com/in/prakshal-jain-profile</a></p>
-      <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a href = "//github.com/Prakshal-Jain" style="text-decoration: none;" target="_blank">github.com/Prakshal-Jain</a></p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a
+          href="mailto:prakshal@buffalo.edu" style="text-decoration: none;">prakshal@buffalo.edu</a></p>
+      <p><i class="fa fa-linkedin-square fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a
+          href="//www.linkedin.com/in/prakshal-jain-profile" style="text-decoration: none;"
+          target="_blank">www.linkedin.com/in/prakshal-jain-profile</a></p>
+      <p><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a
+          href="//github.com/Prakshal-Jain" style="text-decoration: none;" target="_blank">github.com/Prakshal-Jain</a>
+      </p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> +1 (716) 730-0312
+      </p>
     </div><br>
-  <!-- End Contact Section -->
+    <!-- End Contact Section -->
   </div>
-<div><center><a href = "https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm" target="_blank">Website Source</a></center></div>
-  <div><center><small>The mission of my life is to bring technology closer to the melody of nature.</small></center></div>
-<!-- END PAGE CONTENT -->
-</div>
+  <div>
+    <center><small>The mission of my life is to bring technology closer to the melody of nature and build tools to
+        simplify lives.</small></center>
+  </div>
+  <p>
+    <center><a href="https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm" target="_blank">Website
+        Source</a></center>
+  </p>
+  <!-- END PAGE CONTENT -->
+  </div>
 
-<script>
-  document.getElementById("repos").innerHTML = '<div class="ripple"></div><p>Please wait... Fetching projects from GitHub</p>'
-  var d = 0
-  $.ajax({
-  url: "https://api.github.com/users/Prakshal-Jain/repos",
-  jsonp: true,
-  method: "GET",
-  dataType: "json",
-  success: function(res) {
-    document.getElementById("repos").innerHTML = ''
-    for (let e of res){
-      if(d <= 3){
-        document.getElementById("repos").innerHTML += "<div id='codes_content'  onclick='window.open(`"+e.clone_url+"`)'><h4 style='font-weight:bold;'>"+e.name+"</h4>"+e.description+"<br/>"+(e.language != null ? " Language: "+e.language : "")+"</div>"
-        d += 1
+  <script>
+    document.getElementById("repos").innerHTML = '<div class="ripple"></div><p>Please wait... Fetching projects from GitHub</p>'
+    var d = 0
+    $.ajax({
+      url: "https://api.github.com/users/Prakshal-Jain/repos?sort=updated",
+      jsonp: true,
+      method: "GET",
+      dataType: "json",
+      success: function (res) {
+        document.getElementById("repos").innerHTML = ''
+        for (let e of res) {
+          if (d <= 3) {
+            document.getElementById("repos").innerHTML += "<div id='codes_content'  onclick='window.open(`" + e.clone_url + "`)'><h4 style='font-weight:bold;'>" + e.name + "</h4>" + e.description + "<br/>" + (e.language != null ? " Language: " + e.language : "") + "</div>"
+            d += 1
+          }
+          else {
+            document.getElementById("extra_repos").innerHTML += "<div id='codes_content'  onclick='window.open(`" + e.clone_url + "`)'><h4 style='font-weight:bold;'>" + e.name + "</h4>" + e.description + "<br/>" + (e.language != null ? " Language: " + e.language : "") + "</div>"
+            d += 1
+          }
+        }
+        document.getElementById("proj").innerHTML = String(d) + "+"
       }
-      else{
-        document.getElementById("extra_repos").innerHTML += "<div id='codes_content'  onclick='window.open(`"+e.clone_url+"`)'><h4 style='font-weight:bold;'>"+e.name+"</h4>"+e.description+"<br/>"+(e.language != null ? " Language: "+e.language : "")+"</div>"
-        d += 1
-      }
+    });
+
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
     }
-    document.getElementById("proj").innerHTML = String(d)+"+"
-  }
-});
 
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
-
-</script>
-<script src="https://www.retainable.app/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+  </script>
+  <script src="https://www.retainable.app/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
 </body>
+
 </html>

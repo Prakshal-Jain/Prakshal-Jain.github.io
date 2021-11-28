@@ -1,74 +1,97 @@
 [
- {
-  "title": "Tech-Squad Counter Consultant",
-  "place": "University at Buffalo",
-  "duration": [
-   "Feb 2021",
-   "Present"
-  ],
-  "information": "<p>UBIT serves to resolve technical issues of over 30,000 UB Students. My responsibilities include:- Resolving hardware and software-related Technical issues and writing reports.- Sending out notification Emails, reporting issues, updating information.</p>"
- },
- {
-  "title": "Student Programmer",
-  "place": "University at Buffalo Department of Communicative Disorders & Sciences",
-  "duration": [
-   "Feb 2021",
-   "Present"
-  ],
-  "information": "<p>The research by the Department of Communicative Disorders & Sciences, University at Buffalo focuses on speech deficits in Parkinson's disease and other neurological movement disorders.My tasks include working on the codebase for the research's perceptual experiments.Programming Languages and Libraries include:Python | JavaScript | jsPsych</p>"
- },
- {
-  "title": "Undergraduate Research Assistant",
-  "place": "University at Buffalo Honors College",
-  "duration": [
-   "Mar 2020",
-   "Present"
-  ],
-  "information": "<p>Part of multidisciplinary research receiving $800,000 grant funded by National Science Foundation and Amazon to develop a machine learning system to help caseworkers and human services agencies determine the best available services for the more than 20,000 youth who annually age out of foster care without rejoining their families.Responsibilities include:1. Developing the website and multiple in-site portals for the organization from the ground on.2. Wireframing, prototyping\u2026</p><p>Part of multidisciplinary research receiving $800,000 grant funded by National Science Foundation and Amazon to develop a machine learning system to help caseworkers and human services agencies determine the best available services for the more than 20,000 youth who annually age out of foster care without rejoining their families.Responsibilities include:1. Developing the website and multiple in-site portals for the organization from the ground on.2. Wireframing, prototyping, and documentation of the website and portal.3. Bash ScriptingLinks to the websites:Official Website: https://cs4sg.github.io/Organization Side Website & Documentation: https://cs4sg.github.io/cs4sg_organization.github.io/Technologies and Languages involved:Jekyll | JavaScript | HTML | CSS | PHP | jQuery | Bash</p>"
- },
- {
-  "title": "Teaching Assistant Computer Science and Engineering",
-  "place": "University at Buffalo",
-  "duration": [
-   "Aug 2020",
-   "<time>Dec 2020</time>"
-  ],
-  "information": "<p>Teaching assistant for CSE 199 at University at Buffalo.Tutored students and graded weekly homework and recitations for 3 Computer Science class.Total class size: 93</p>"
- },
- {
-  "title": "OneDataShare - Frontend Developer",
-  "place": "University at Buffalo School of Engineering and Applied Sciences",
-  "duration": [
-   "Aug 2020",
-   "<time>Oct 2020</time>"
-  ],
-  "information": "<p>Part of a research team involved in creating a tool, designed to work with the existing computing infrastructure to boost data transfer speeds by more than 10 times. Project funded by National Science Foundation with $584,469 grant to address this problem.Tasks include:- Wireframing, prototyping, and developing the frontend component working on the website UI component.- Using RESTful API developed for the organization to fetch and display user information securely on an\u2026</p><p>Part of a research team involved in creating a tool, designed to work with the existing computing infrastructure to boost data transfer speeds by more than 10 times. Project funded by National Science Foundation with $584,469 grant to address this problem.Tasks include:- Wireframing, prototyping, and developing the frontend component working on the website UI component.- Using RESTful API developed for the organization to fetch and display user information securely on an endpoint credential page.Tools/ frameworks involved:ReactJS | MaterialUI | HTML | CSS | Vanilla JavaScript</p>"
- },
- {
-  "title": "Web Designer and Developer",
-  "place": "University at Buffalo School of Social Work",
-  "duration": [
-   "Jul 2020",
-   "<time>Aug 2020</time>"
-  ],
-  "information": "<p>Tasks include:Building subdomains of the blogging website for University at Buffalo School of Social Work to allow people to post the problems and solutions of societal problems and use that information towards research.Technologies and Tools:JavaScript | WordPress | HTML | CSS</p>"
- },
- {
-  "title": "Research Assistant at Stony Brook Department of Psychology",
-  "place": "Stony Brook University",
-  "duration": [
-   "Jun 2020",
-   "<time>Aug 2020</time>"
-  ],
-  "information": "<p>I have been volunteering as a research assistant at Stony Brook Department of Psychology at Stony Brook University. My main roles include:- Writing code scripts for research experimentations- Finding bugs in the prewritten scripts and optimizing performance- Making the current system more scalable by shifting to a different environment- Taking experiments online by creating an online version of the current platformProgramming Languages Used:Python |\u2026</p><p>I have been volunteering as a research assistant at Stony Brook Department of Psychology at Stony Brook University. My main roles include:- Writing code scripts for research experimentations- Finding bugs in the prewritten scripts and optimizing performance- Making the current system more scalable by shifting to a different environment- Taking experiments online by creating an online version of the current platformProgramming Languages Used:Python | JavaScriptTools and Frameworks:PsychoPy | Pavlovia | OpenCv</p>"
- },
- {
-  "title": "Marketing Content Writer Intern",
-  "place": "Monocept",
-  "duration": [
-   "Apr 2019",
-   "<time>May 2019</time>"
-  ],
-  "information": "<p>I interned in a Software Company named Monocept, a software company partnered with Microsoft that enables enterprises to address their complex business problems using technology.Responsibilities included:1. Transcription of the coding and optimization strategies discussed in company team meetings.2. Writing articles and concepts related to the virtual platform of the company.3. Writing script for counseling meetings of the organization.The website visits and blog views grew\u2026</p><p>I interned in a Software Company named Monocept, a software company partnered with Microsoft that enables enterprises to address their complex business problems using technology.Responsibilities included:1. Transcription of the coding and optimization strategies discussed in company team meetings.2. Writing articles and concepts related to the virtual platform of the company.3. Writing script for counseling meetings of the organization.The website visits and blog views grew by 24.48% and the sales of the products also increased to around 8%.</p>"
- }
+    {
+        "title": "Research Assistant (NLP)",
+        "place": "University at Buffalo Department of Computer Science and Engineering",
+        "duration": [
+            "Sep 2021",
+            "Present"
+        ]
+    },
+    {
+        "title": "Teaching Assistant (Data Structures)",
+        "place": "University at Buffalo Department of Computer Science and Engineering",
+        "duration": [
+            "Aug 2021",
+            "Present"
+        ]
+    },
+    {
+        "title": "Research Assistant and Student Programmer",
+        "place": "University at Buffalo Department of Communicative Disorders & Sciences",
+        "duration": [
+            "Feb 2021",
+            "Present"
+        ]
+    },
+    {
+        "title": "Software Developer Intern",
+        "place": "MemoryFox",
+        "duration": [
+            "Feb 2021",
+            "Present"
+        ]
+    },
+    {
+        "title": "Tech-Squad Counter Consultant",
+        "place": "University at Buffalo",
+        "duration": [
+            "Feb 2021",
+            "Aug 2021"
+        ],
+        "information": "<p>UBIT serves to resolve technical issues of over 30,000 UB Students. My responsibilities include:- Resolving hardware and software-related Technical issues and writing reports.- Sending out notification Emails, reporting issues, updating information.</p>"
+    },
+    {
+        "title": "Undergraduate Research Assistant",
+        "place": "University at Buffalo Honors College",
+        "duration": [
+            "Mar 2020",
+            "May 2021"
+        ],
+        "information": "<p>Part of multidisciplinary research receiving $800,000 grant funded by National Science Foundation and Amazon to develop a machine learning system to help caseworkers and human services agencies determine the best available services for the more than 20,000 youth who annually age out of foster care without rejoining their families.Responsibilities include:1. Developing the website and multiple in-site portals for the organization from the ground on.2. Wireframing, prototyping\u2026</p><p>Part of multidisciplinary research receiving $800,000 grant funded by National Science Foundation and Amazon to develop a machine learning system to help caseworkers and human services agencies determine the best available services for the more than 20,000 youth who annually age out of foster care without rejoining their families.Responsibilities include:1. Developing the website and multiple in-site portals for the organization from the ground on.2. Wireframing, prototyping, and documentation of the website and portal.3. Bash ScriptingLinks to the websites:Official Website: https://cs4sg.github.io/Organization Side Website & Documentation: https://cs4sg.github.io/cs4sg_organization.github.io/Technologies and Languages involved:Jekyll | JavaScript | HTML | CSS | PHP | jQuery | Bash</p>"
+    },
+    {
+        "title": "Teaching Assistant Computer Science and Engineering",
+        "place": "University at Buffalo",
+        "duration": [
+            "Aug 2020",
+            "<time>Dec 2020</time>"
+        ],
+        "information": "<p>Teaching assistant for CSE 199 at University at Buffalo.Tutored students and graded weekly homework and recitations for 3 Computer Science class.Total class size: 93</p>"
+    },
+    {
+        "title": "OneDataShare - Frontend Developer",
+        "place": "University at Buffalo School of Engineering and Applied Sciences",
+        "duration": [
+            "Aug 2020",
+            "<time>Oct 2020</time>"
+        ],
+        "information": "<p>Part of a research team involved in creating a tool, designed to work with the existing computing infrastructure to boost data transfer speeds by more than 10 times. Project funded by National Science Foundation with $584,469 grant to address this problem.Tasks include:- Wireframing, prototyping, and developing the frontend component working on the website UI component.- Using RESTful API developed for the organization to fetch and display user information securely on an\u2026</p><p>Part of a research team involved in creating a tool, designed to work with the existing computing infrastructure to boost data transfer speeds by more than 10 times. Project funded by National Science Foundation with $584,469 grant to address this problem.Tasks include:- Wireframing, prototyping, and developing the frontend component working on the website UI component.- Using RESTful API developed for the organization to fetch and display user information securely on an endpoint credential page.Tools/ frameworks involved:ReactJS | MaterialUI | HTML | CSS | Vanilla JavaScript</p>"
+    },
+    {
+        "title": "Web Designer and Developer",
+        "place": "University at Buffalo School of Social Work",
+        "duration": [
+            "Jul 2020",
+            "<time>Aug 2020</time>"
+        ],
+        "information": "<p>Tasks include:Building subdomains of the blogging website for University at Buffalo School of Social Work to allow people to post the problems and solutions of societal problems and use that information towards research.Technologies and Tools:JavaScript | WordPress | HTML | CSS</p>"
+    },
+    {
+        "title": "Research Assistant at Stony Brook Department of Psychology",
+        "place": "Stony Brook University",
+        "duration": [
+            "Jun 2020",
+            "<time>Aug 2020</time>"
+        ],
+        "information": "<p>I have been volunteering as a research assistant at Stony Brook Department of Psychology at Stony Brook University. My main roles include:- Writing code scripts for research experimentations- Finding bugs in the prewritten scripts and optimizing performance- Making the current system more scalable by shifting to a different environment- Taking experiments online by creating an online version of the current platformProgramming Languages Used:Python |\u2026</p><p>I have been volunteering as a research assistant at Stony Brook Department of Psychology at Stony Brook University. My main roles include:- Writing code scripts for research experimentations- Finding bugs in the prewritten scripts and optimizing performance- Making the current system more scalable by shifting to a different environment- Taking experiments online by creating an online version of the current platformProgramming Languages Used:Python | JavaScriptTools and Frameworks:PsychoPy | Pavlovia | OpenCv</p>"
+    },
+    {
+        "title": "Marketing Content Writer Intern",
+        "place": "Monocept",
+        "duration": [
+            "Apr 2019",
+            "<time>May 2019</time>"
+        ],
+        "information": "<p>I interned in a Software Company named Monocept, a software company partnered with Microsoft that enables enterprises to address their complex business problems using technology.Responsibilities included:1. Transcription of the coding and optimization strategies discussed in company team meetings.2. Writing articles and concepts related to the virtual platform of the company.3. Writing script for counseling meetings of the organization.The website visits and blog views grew\u2026</p><p>I interned in a Software Company named Monocept, a software company partnered with Microsoft that enables enterprises to address their complex business problems using technology.Responsibilities included:1. Transcription of the coding and optimization strategies discussed in company team meetings.2. Writing articles and concepts related to the virtual platform of the company.3. Writing script for counseling meetings of the organization.The website visits and blog views grew by 24.48% and the sales of the products also increased to around 8%.</p>"
+    }
 ]

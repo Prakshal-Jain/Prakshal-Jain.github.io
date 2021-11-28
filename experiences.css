@@ -22,7 +22,7 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background: #27293d;
+    background: #222;
   }
   .timeline .timeline-container {
     position: relative;
@@ -30,10 +30,10 @@
   }
   .timeline .timeline-container .timeline-icon {
     position: absolute;
-    left: -88px;
+    left: -2.2em;
     top: 4px;
-    width: 50px;
-    height: 50px;
+    width: 0.5em;
+    height: 0.5em;
     border-radius: 50%;
     text-align: center;
     font-size: 2rem;
@@ -51,7 +51,8 @@
     border-radius: 50%;
   }
   .timeline .timeline-container .timeline-body {
-    background: #27293d;
+    text-align: left;
+    background: #222;
     border-radius: 3px;
     padding: 20px 20px 15px;
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
@@ -86,7 +87,8 @@
   }
   .timeline .timeline-container.primary .badge,
   .timeline .timeline-container.primary .timeline-icon {
-    background: #0099FF !important;
+    border: 0.1em solid #0099FF;
+    background: transparent !important;
   }
   .timeline .timeline-container.info .badge,
   .timeline .timeline-container.info .timeline-icon {

@@ -578,3 +578,24 @@
 	}
 
 } */
+
+
+.theme-gradient-text{
+    background: linear-gradient(#00C8FF, #D200FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.information-card-container{
+    padding: 0.3em;
+    margin: 1em;
+    background: linear-gradient(#00C8FF, #D200FF);
+    border-radius: 0.5em;
+}
+
+.information-card{
+    background: #222;
+    color: white;
+    padding: 2em;
+    border-radius: 0.5em;
+}
